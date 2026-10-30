@@ -1,4 +1,4 @@
-# Basal Cycle
+# Cyclsius
 
 Cycle and basal body temperature (BBT) tracker using the symptothermal method.
 Runs fully offline; data stays on the device.
@@ -18,7 +18,7 @@ Not a medical device; do not use as contraception without training in the method
 
 ## Install on a phone
 
-- **Android APK**: download `basal-cycle.apk` from the latest GitHub Release and open it
+- **Android APK**: download `cyclsius.apk` from the latest GitHub Release and open it
   (allow "install unknown apps" for your browser/file manager). New releases install as updates and keep your data.
 - **Web app (Android or iPhone)**: open the GitHub Pages URL in Chrome/Safari and use
   "Add to Home screen" / "Install app". Works offline after the first load.
@@ -36,5 +36,5 @@ The web app is plain HTML/JS in `www/` (logic in `www/cycle.js`, UI in `www/app.
 The Android app is a Capacitor wrapper (`android/`); CI builds and publishes the APK on every push to `main`.
 `scripts/make-icons.js` and `scripts/android-assets.js` regenerate icons from `scripts/icon.svg`.
 
-The APK is signed with `android/app/basalcycle.keystore` (committed, password `basalcycle`) so builds update in place.
+The APK is signed with `android/app/cyclsius.keystore` (committed, password `cyclsius`) so builds update in place.
 To sign with a private key instead, set the `SIGNING_*` environment variables read in `android/app/build.gradle`.

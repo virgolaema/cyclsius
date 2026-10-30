@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "io.github.basalcycle"
+    namespace = "io.github.virgolaema.cyclsius"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.github.basalcycle"
+        applicationId "io.github.virgolaema.cyclsius"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode Integer.parseInt(System.getenv("VERSION_CODE") ?: "1")
@@ -20,10 +20,10 @@ android {
     // Override with SIGNING_* env vars to use a private key.
     signingConfigs {
         app {
-            storeFile file(System.getenv("SIGNING_STORE_FILE") ?: "basalcycle.keystore")
-            storePassword System.getenv("SIGNING_STORE_PASSWORD") ?: "basalcycle"
-            keyAlias System.getenv("SIGNING_KEY_ALIAS") ?: "basalcycle"
-            keyPassword System.getenv("SIGNING_KEY_PASSWORD") ?: "basalcycle"
+            storeFile file(System.getenv("SIGNING_STORE_FILE") ?: "cyclsius.keystore")
+            storePassword System.getenv("SIGNING_STORE_PASSWORD") ?: "cyclsius"
+            keyAlias System.getenv("SIGNING_KEY_ALIAS") ?: "cyclsius"
+            keyPassword System.getenv("SIGNING_KEY_PASSWORD") ?: "cyclsius"
         }
     }
     buildTypes {

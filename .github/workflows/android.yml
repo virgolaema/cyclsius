@@ -30,15 +30,15 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew assembleRelease --no-daemon
-          cp app/build/outputs/apk/release/app-release.apk ../basal-cycle.apk
+          cp app/build/outputs/apk/release/app-release.apk ../cyclsius.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: basal-cycle-apk
-          path: basal-cycle.apk
+          name: cyclsius-apk
+          path: cyclsius.apk
       - name: Publish release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           TAG=v1.0.${{ github.run_number }}
-          gh release create "$TAG" basal-cycle.apk --title "Basal Cycle $TAG" \
-            --notes "Android APK built from ${{ github.sha }}. Install basal-cycle.apk on your phone." --latest
+          gh release create "$TAG" cyclsius.apk --title "Cyclsius $TAG" \
+            --notes "Android APK built from ${{ github.sha }}. Install cyclsius.apk on your phone." --latest

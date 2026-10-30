@@ -1,4 +1,4 @@
-package io.github.basalcycle;
+package io.github.virgolaema.cyclsius;
 
 import com.getcapacitor.BridgeActivity;
 

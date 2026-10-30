@@ -1,5 +1,5 @@
 // Offline cache. Bump VERSION when files change.
-const VERSION = 'basal-cycle-v1';
+const VERSION = 'cyclsius-v1';
 const FILES = ['./', 'index.html', 'styles.css', 'app.js', 'cycle.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png'];
 

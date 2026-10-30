@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Basal Cycle</string>
-    <string name="title_activity_main">Basal Cycle</string>
-    <string name="package_name">io.github.basalcycle</string>
-    <string name="custom_url_scheme">io.github.basalcycle</string>
+    <string name="app_name">Cyclsius</string>
+    <string name="title_activity_main">Cyclsius</string>
+    <string name="package_name">io.github.virgolaema.cyclsius</string>
+    <string name="custom_url_scheme">io.github.virgolaema.cyclsius</string>
 </resources>

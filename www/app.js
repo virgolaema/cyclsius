@@ -3,7 +3,7 @@ import {
   cToF, fToC, toCSV, fromCSV, DEFAULT_SETTINGS,
 } from './cycle.js';
 
-const STORE_KEY = 'basal-cycle.v1';
+const STORE_KEY = 'cyclsius.v1';
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
@@ -566,8 +566,8 @@ function bind() {
   });
   $('#settings-form').addEventListener('change', saveSettings);
   $('#export-json').addEventListener('click', () =>
-    exportFile(`basal-cycle-${stamp()}.json`, JSON.stringify({ app: 'basal-cycle', version: 1, ...state }, null, 1), 'application/json'));
-  $('#export-csv').addEventListener('click', () => exportFile(`basal-cycle-${stamp()}.csv`, toCSV(state.entries), 'text/csv'));
+    exportFile(`cyclsius-${stamp()}.json`, JSON.stringify({ app: 'cyclsius', version: 1, ...state }, null, 1), 'application/json'));
+  $('#export-csv').addEventListener('click', () => exportFile(`cyclsius-${stamp()}.csv`, toCSV(state.entries), 'text/csv'));
   $('#import-file').addEventListener('change', importFile);
   $('#load-demo').addEventListener('click', () => {
     if (Object.keys(state.entries).length && !confirm('Replace your data with demo data?')) return;

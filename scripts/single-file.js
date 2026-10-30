@@ -1,4 +1,4 @@
-// Builds dist/basal-cycle.html: the whole web app in one file (no service worker).
+// Builds dist/cyclsius.html: the whole web app in one file (no service worker).
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
@@ -15,5 +15,5 @@ html = html
   .replace(/href="icons\/icon-192.png"/g, `href="data:image/png;base64,${icon}"`)
   .replace('<script type="module" src="app.js"></script>', () => `<script type="module">\n${js}</script>`);
 await mkdir(root + 'dist', { recursive: true });
-await writeFile(root + 'dist/basal-cycle.html', html);
-console.log('dist/basal-cycle.html', html.length, 'bytes');
+await writeFile(root + 'dist/cyclsius.html', html);
+console.log('dist/cyclsius.html', html.length, 'bytes');

@@ -1,6 +1,6 @@
 {
-  "appId": "io.github.basalcycle",
-  "appName": "Basal Cycle",
+  "appId": "io.github.virgolaema.cyclsius",
+  "appName": "Cyclsius",
   "webDir": "www",
   "android": { "allowMixedContent": false }
 }
