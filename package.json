@@ -1,0 +1,22 @@
+{
+  "name": "bbt-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cycle and basal body temperature tracker (symptothermal method)",
+  "scripts": {
+    "test": "node --test tests/cycle.test.js",
+    "test:e2e": "node --test tests/e2e.test.js",
+    "serve": "node scripts/serve.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "playwright": "1.63.0"
+  }
+}

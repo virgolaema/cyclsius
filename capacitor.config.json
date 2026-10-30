@@ -1,0 +1,6 @@
+{
+  "appId": "io.github.basalcycle",
+  "appName": "Basal Cycle",
+  "webDir": "www",
+  "android": { "allowMixedContent": false }
+}
