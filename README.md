@@ -18,9 +18,9 @@ Not a medical device; do not use as contraception without training in the method
 
 ## Install on a phone
 
-- **Android APK**: download `cyclsius.apk` from the latest GitHub Release and open it
+- **Android APK**: download `cyclsius.apk` from the [latest release](https://github.com/virgolaema/cyclsius/releases/latest) and open it
   (allow "install unknown apps" for your browser/file manager). New releases install as updates and keep your data.
-- **Web app (Android or iPhone)**: open the GitHub Pages URL in Chrome/Safari and use
+- **Web app (Android or iPhone)**: open https://virgolaema.github.io/cyclsius/ in Chrome/Safari and use
   "Add to Home screen" / "Install app". Works offline after the first load.
 
 ## Development
